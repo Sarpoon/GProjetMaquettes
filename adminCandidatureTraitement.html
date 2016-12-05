@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OAFA - Administration</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">OAFA - Administration</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-eye" aria-hidden="true"></i> Changer de vue <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="candidatIndex.html"><i class="fa fa-question" aria-hidden="true"></i> Candidat</a>
+                        </li>
+                        <li>
+                            <a href="membreIndex.html"><i class="fa fa-check" aria-hidden="true"></i> Membre</a>
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-user" aria-hidden="true"></i> Employé</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Employé <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Options</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Déconnexion</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Accueil</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-folder-o" aria-hidden="true"></i> Documentation <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="documentationMembre.html">Devenir membre de l'ordre</a>
+                            </li>
+                            <li>
+                                <a href="documentationStage.html">Stages</a>
+                            </li>
+                            <li>
+                                <a href="documentationCours.html">Cours</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#candidature"><i class="fa fa-file-text-o" aria-hidden="true"></i> Candidature <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="candidature" class="collapse">
+                            <li>
+                                <a href="adminCandidature.html">Traitement des candidatures</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#stage"><i class="fa fa-building-o" aria-hidden="true"></i> Stage <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="stage" class="collapse">
+                            <li>
+                                <a href="adminStageFormulaire.html">Traitement des formulaires</a>
+                            </li>
+                            <li>
+                                <a href="adminStageRapport.html">Traitement des rapports</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#formation"><i class="fa fa-university" aria-hidden="true"></i> Formation <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="formation" class="collapse">
+                            <li>
+                                <a href="#">Prêtes à être assignées</a>
+                            </li>
+                            <li>
+                                <a href="#">Candidats pas assez nombreux</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Fiche Candidat
+                            <button type="button" class="btn btn-primary" style="float: right; width: 200px;">Candidature suivante</button>
+                            <button type="button" class="btn btn-primary" style="float: right; width: 200px; margin-right: 30px;">Candidature précédente</button>
+                        </h1>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-7">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Informations</div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td><b>Numéro de candidature :</b></td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Nom :</b></td>
+                                            <td>Pierre</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Prénom :</b></td>
+                                            <td>Jean</td>
+                                        </tr>    
+                                        <tr>
+                                            <td><b>Couriel :</b></td>
+                                            <td>jean.pierre@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Date de naissance : </b></td>
+                                            <td> 02 - 16 - 1992</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Adresse : </b></td>
+                                            <td> 11 rue du lac, Québec</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Ville :</b></td>
+                                            <td>Laval</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Candidature :</b></td>
+                                            <td>Nouveau candidat à la profession</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div> 
+                    <div class="col-md-5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Documents</div>
+                            <div class="panel-body">
+                                <a href="#"><b>LettreDeMotivation.pdf </b><span class="glyphicon
+                                    glyphicon-download-alt"></span></a><br>
+                                <a href="#"><b>CV.pdf </b><span class="glyphicon
+                                    glyphicon-download-alt"></span></a><br>
+                                <a href="#"><b>Dossier.pdf </b><span class="glyphicon
+                                    glyphicon-download-alt"></span></a>
+                            </div>
+                            <div class="panel-heading">Couriers</div>
+                            <div class="panel-body">
+                                <div  class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td><b>Lettre de refus : </b></td>
+                                                <td>
+                                                    <a href="#">
+                                                        <button type="button" class="btn btn-primary">Editer</button>
+                                                        <button type="button" class="btn btn-primary">Imprimmer</button>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>        
+                                                <td><b>Lettre d'acceptation : </b></td>
+                                                <td>
+                                                    <a href="#">    
+                                                        <button type="button" class="btn btn-primary">Editer</button>
+                                                        <button type="button" class="btn btn-primary">Imprimmer</button>
+                                                    </a>            
+                                                </td>
+                                            </tr>
+                                            <tr>          
+                                                <td><b>Lettre custom : </b></td>
+                                                <td>
+                                                    <a href="#">
+                                                        <button type="button" class="btn btn-primary">Editer</button>
+                                                        <button type="button" class="btn btn-primary">Imprimmer</button>
+                                                    </a>            
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Actions</div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                    <b>Etat : Candidature étudiée / Non traitée</b>
+                                        <br><br>
+                                        <button type="button" class="btn btn-success" style="width: 100%;float: left;">Accepter la candidature</button><br><br>
+                                        <button type="button" class="btn btn-danger" style="width: 100%; float: left;">Refuser la candidature </button><br><br><br>
+                                        <button type="button" class="btn btn-warning" style="width: 100%; float: left;">Demander des documents complémentaires</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="comment">Envoyer un couriel : </label>
+                                            <textarea class="form-control" rows="6" id="email" style="text-align: left;">
+Nous avons le plaisir de vous confirmer votre adhésion à l'ordre. 
+Veuillez trouver ci-joint les document à nous retourner.
+Cordialement.
+                                            </textarea>
+                                            <button type="button" class="btn btn-primary" style="float: right;">Envoyer</button>
+                                            <button type="button" class="btn btn-default" style="float: right;">Ajouter une pièce jointe</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="comment">Commentaire : </label>
+                                            <textarea class="form-control" rows="6" id="comment">Candidat intéressant !</textarea>
+                                            <button type="button" class="btn btn-primary" style="float: right;">Sauvegarder</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>
