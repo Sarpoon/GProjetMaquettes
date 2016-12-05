@@ -6,7 +6,7 @@ $(function() {
     Morris.Area({
         element: 'morris-area-chart',
         data: [{
-            period: '2010 Q1',
+            period: '2010 ç',
             iphone: 2666,
             ipad: null,
             itouch: 2647
@@ -196,22 +196,22 @@ $(function() {
     Morris.Bar({
         element: 'morris-bar-chart',
         data: [{
-            device: 'iPhone',
+            device: '2011',
             geekbench: 136
         }, {
-            device: 'iPhone 3G',
+            device: '2012',
             geekbench: 137
         }, {
-            device: 'iPhone 3GS',
+            device: '2013',
             geekbench: 275
         }, {
-            device: 'iPhone 4',
+            device: '2014',
             geekbench: 380
         }, {
-            device: 'iPhone 4S',
+            device: '2015',
             geekbench: 655
         }, {
-            device: 'iPhone 5',
+            device: '2016',
             geekbench: 1571
         }],
         xkey: 'device',
