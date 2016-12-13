@@ -100,7 +100,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="javascript:;" data-toggle="collapse" data-target="#candidature"><i class="fa fa-file-text-o" aria-hidden="true"></i> Candidature <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="candidature" class="collapse">
                             <li>
@@ -128,7 +128,7 @@
                             
                         </ul>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#cotisation"><i class="fa fa-money" aria-hidden="true"></i> Cotisation <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="cotisation" class="collapse">
                             <li>
@@ -152,72 +152,86 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Résumé
+                            Suivi de la formation des membres et candidats
                         </h1>
                     </div>
                 </div>
-                <!-- /.row -->
-
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="panel panel-green">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Historique des cotisations</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div id="morris-area-chart"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
                 
                 <div class="row">
-                    <div class="col-lg-4">
-                        <div class="panel panel-yellow">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Donut Chart Example</h3>
+                    <div class="col-lg-7"></div>
+                    <div class="col-lg-5">
+                        <div class="input-group">
+                            <div class="input-group-btn search-panel">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <span id="search_concept">Filtré par</span> <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li><a href="#">Statut</a></li>
+                                  <li><a href="#">Nom</a></li>
+                                </ul>
                             </div>
-                            <div class="panel-body">
-                                <div id="morris-donut-chart"></div>
-                                <div class="text-right">
-                                    <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
-                            </div>
+                            <input type="hidden" name="search_param" value="all" id="search_param">         
+                            <input type="text" class="form-control" name="x" placeholder="Recherche">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                            </span>
                         </div>
                     </div>
-                    
-                    <div class="col-lg-4">
-                        <div class="panel panel-red">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Line Graph Example with Tooltips</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div id="morris-line-chart"></div>
-                                <div class="text-right">
-                                    <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Bar Graph Example</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div id="morris-bar-chart"></div>
-                                <div class="text-right">
-                                    <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
 
-                <!-- /.row -->
+                <br>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nom</th>
+                                        <th>Prénom</th>
+                                        <th>Formation en cours</th>
+                                        <th>Formation postulée</th>
+                                        <th>Ecole</th>
+                                        <th>Statut</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Pierre</td>
+                                        <td>Jean</td>
+                                        <td>Cabinet Tremblay</td>
+                                        <td>Bureau central</td>
+                                        <td>Laval</td>
+                                        <td>Demande traitée / en attente de confirmation</td>
+                                        <td><a href="adminFormationTraitement.html"><button type="submit" class="btn btn-primary">Voir</button></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Jean</td>
+                                        <td>Paul</td>
+                                        <td>Cabinet Tremblay</td>
+                                        <td>Bureau central</td>
+                                        <td>Laval</td>
+                                        <td>Demande non traitée</td>
+                                        <td><a href="adminFormationTraitement.html"><button type="submit" class="btn btn-primary">Voir</button></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Peter</td>
+                                        <td>Vincent</td>
+                                        <td>Aucun</td>
+                                        <td>Bureau central</td>
+                                        <td>Laval</td>
+                                        <td>Demande traitée / en attente de confirmation</td>
+                                        <td><a href="adminFormationTraitement.html"><button type="submit" class="btn btn-primary">Voir</button></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div> 
+                </div>
 
             </div>
             <!-- /.container-fluid -->
@@ -238,14 +252,6 @@
     <script src="js/plugins/morris/raphael.min.js"></script>
     <script src="js/plugins/morris/morris.min.js"></script>
     <script src="js/plugins/morris/morris-data.js"></script>
-
-    <!-- Flot Charts JavaScript -->
-    <!--[if lte IE 8]><script src="js/excanvas.min.js"></script><![endif]-->
-    <script src="js/plugins/flot/jquery.flot.js"></script>
-    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
-    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
-    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
-    <script src="js/plugins/flot/flot-data.js"></script>
 
 </body>
 

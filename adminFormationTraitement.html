@@ -100,7 +100,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="javascript:;" data-toggle="collapse" data-target="#candidature"><i class="fa fa-file-text-o" aria-hidden="true"></i> Candidature <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="candidature" class="collapse">
                             <li>
@@ -128,7 +128,7 @@
                             
                         </ul>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#cotisation"><i class="fa fa-money" aria-hidden="true"></i> Cotisation <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="cotisation" class="collapse">
                             <li>
@@ -152,72 +152,149 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Résumé
+                            Fiche Candidat
+                            <button type="button" class="btn btn-primary" style="float: right; width: 200px;">Candidature suivante</button>
+                            <button type="button" class="btn btn-primary" style="float: right; width: 200px; margin-right: 30px;">Candidature précédente</button>
                         </h1>
                     </div>
                 </div>
-                <!-- /.row -->
+                
+                <div class="row">
+                    <div class="col-md-7">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Informations</div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td><b>Numéro de candidature :</b></td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Nom :</b></td>
+                                            <td>Pierre</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Prénom :</b></td>
+                                            <td>Jean</td>
+                                        </tr>    
+                                        <tr>
+                                            <td><b>Couriel :</b></td>
+                                            <td>jean.pierre@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Date de naissance : </b></td>
+                                            <td> 02 - 16 - 1992</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Adresse : </b></td>
+                                            <td> 11 rue du lac, Québec</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Ville :</b></td>
+                                            <td>Laval</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Candidature :</b></td>
+                                            <td>Nouveau candidat au bureau central</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div> 
+                    <div class="col-md-5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Documents</div>
+                            <div class="panel-body">
+                                <a href="#"><b>LettreDeMotivation.pdf </b><span class="glyphicon
+                                    glyphicon-download-alt"></span></a><br>
+                                <a href="#"><b>CV.pdf </b><span class="glyphicon
+                                    glyphicon-download-alt"></span></a><br>
+                                <a href="#"><b>Dossier.pdf </b><span class="glyphicon
+                                    glyphicon-download-alt"></span></a>
+                            </div>
+                            <div class="panel-heading">Couriers</div>
+                            <div class="panel-body">
+                                <div  class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td><b>Lettre de refus : </b></td>
+                                                <td>
+                                                    <a href="#">
+                                                        <button type="button" class="btn btn-primary">Editer</button>
+                                                        <button type="button" class="btn btn-primary">Imprimer</button>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>        
+                                                <td><b>Lettre d'acceptation : </b></td>
+                                                <td>
+                                                    <a href="#">    
+                                                        <button type="button" class="btn btn-primary">Editer</button>
+                                                        <button type="button" class="btn btn-primary">Imprimer</button>
+                                                    </a>            
+                                                </td>
+                                            </tr>
+                                            <tr>          
+                                                <td><b>Lettre custom : </b></td>
+                                                <td>
+                                                    <a href="#">
+                                                        <button type="button" class="btn btn-primary">Editer</button>
+                                                        <button type="button" class="btn btn-primary">Imprimer</button>
+                                                    </a>            
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="panel panel-green">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Historique des cotisations</h3>
-                            </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Actions</div>
                             <div class="panel-body">
-                                <div id="morris-area-chart"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-                
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="panel panel-yellow">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Donut Chart Example</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div id="morris-donut-chart"></div>
-                                <div class="text-right">
-                                    <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                    <b>Statut : Candidature étudiée / Non traitée</b>
+                                        <br><br>
+                                        <button type="button" class="btn btn-success" style="width: 100%;float: left;">Accepter la candidature</button><br><br>
+                                        <button type="button" class="btn btn-danger" style="width: 100%; float: left;">Refuser la candidature </button><br><br><br>
+                                        <button type="button" class="btn btn-warning" style="width: 100%; float: left;">Demander des documents complémentaires</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="comment">Envoyer un couriel : </label>
+                                            <textarea class="form-control" rows="6" id="email" style="text-align: left;">
+Nous avons le plaisir de vous confirmer votre adhésion à l'ordre. 
+Veuillez trouver ci-joint les document à nous retourner.
+Cordialement.
+                                            </textarea>
+                                            <button type="button" class="btn btn-primary" style="float: right;">Envoyer</button>
+                                            <button type="button" class="btn btn-default" style="float: right;">Ajouter une pièce jointe</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="comment">Commentaire : </label>
+                                            <textarea class="form-control" rows="6" id="comment">Candidat intéressant !</textarea>
+                                            <button type="button" class="btn btn-primary" style="float: right;">Sauvegarder</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="col-lg-4">
-                        <div class="panel panel-red">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Line Graph Example with Tooltips</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div id="morris-line-chart"></div>
-                                <div class="text-right">
-                                    <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Bar Graph Example</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div id="morris-bar-chart"></div>
-                                <div class="text-right">
-                                    <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
 
-                <!-- /.row -->
+                    </div>
+                </div>
 
             </div>
             <!-- /.container-fluid -->
@@ -238,14 +315,6 @@
     <script src="js/plugins/morris/raphael.min.js"></script>
     <script src="js/plugins/morris/morris.min.js"></script>
     <script src="js/plugins/morris/morris-data.js"></script>
-
-    <!-- Flot Charts JavaScript -->
-    <!--[if lte IE 8]><script src="js/excanvas.min.js"></script><![endif]-->
-    <script src="js/plugins/flot/jquery.flot.js"></script>
-    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
-    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
-    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
-    <script src="js/plugins/flot/flot-data.js"></script>
 
 </body>
 
