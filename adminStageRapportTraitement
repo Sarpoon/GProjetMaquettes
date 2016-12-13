@@ -100,7 +100,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#candidature"><i class="fa fa-file-text-o" aria-hidden="true"></i> Candidature <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="candidature" class="collapse">
                             <li>
@@ -108,7 +108,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="javascript:;" data-toggle="collapse" data-target="#stage"><i class="fa fa-building-o" aria-hidden="true"></i> Stage <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="stage" class="collapse">
                             <li>
@@ -154,9 +154,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Fiche Candidat
-                            <button type="button" class="btn btn-primary" style="float: right; width: 200px;">Candidature suivante</button>
-                            <button type="button" class="btn btn-primary" style="float: right; width: 200px; margin-right: 30px;">Candidature précédente</button>
+                            Formulaire de stage
+                            <button type="button" class="btn btn-primary" style="float: right; width: 200px;">Formulaire suivante</button>
+                            <button type="button" class="btn btn-primary" style="float: right; width: 200px; margin-right: 30px;">Formulaire précédente</button>
                         </h1>
                     </div>
                 </div>
@@ -197,10 +197,7 @@
                                             <td><b>Ville :</b></td>
                                             <td>Laval</td>
                                         </tr>
-                                        <tr>
-                                            <td><b>Candidature :</b></td>
-                                            <td>Nouveau candidat à la profession</td>
-                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -211,12 +208,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">Documents</div>
                             <div class="panel-body">
-                                <a href="#"><b>LettreDeMotivation.pdf </b><span class="glyphicon
-                                    glyphicon-download-alt"></span></a><br>
-                                <a href="#"><b>CV.pdf </b><span class="glyphicon
-                                    glyphicon-download-alt"></span></a><br>
-                                <a href="#"><b>Dossier.pdf </b><span class="glyphicon
-                                    glyphicon-download-alt"></span></a>
+                                
                             </div>
                             <div class="panel-heading">Couriers</div>
                             <div class="panel-body">
@@ -228,7 +220,7 @@
                                                 <td>
                                                     <a href="#">
                                                         <button type="button" class="btn btn-primary">Editer</button>
-                                                        <button type="button" class="btn btn-primary">Imprimer</button>
+                                                        <button type="button" class="btn btn-primary">Imprimmer</button>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -237,7 +229,7 @@
                                                 <td>
                                                     <a href="#">    
                                                         <button type="button" class="btn btn-primary">Editer</button>
-                                                        <button type="button" class="btn btn-primary">Imprimer</button>
+                                                        <button type="button" class="btn btn-primary">Imprimmer</button>
                                                     </a>            
                                                 </td>
                                             </tr>
@@ -246,7 +238,7 @@
                                                 <td>
                                                     <a href="#">
                                                         <button type="button" class="btn btn-primary">Editer</button>
-                                                        <button type="button" class="btn btn-primary">Imprimer</button>
+                                                        <button type="button" class="btn btn-primary">Imprimmer</button>
                                                     </a>            
                                                 </td>
                                             </tr>
@@ -268,15 +260,15 @@
                                     <div class="col-md-4">
                                     <b>Statut : Candidature étudiée / Non traitée</b>
                                         <br><br>
-                                        <button type="button" class="btn btn-success" style="width: 100%;float: left;">Accepter la candidature</button><br><br>
-                                        <button type="button" class="btn btn-danger" style="width: 100%; float: left;">Refuser la candidature </button><br><br><br>
+                                        <button type="button" class="btn btn-success" style="width: 100%;float: left;">Accepter le formulaire</button><br><br>
+                                        <button type="button" class="btn btn-danger" style="width: 100%; float: left;">Refuser le formulaire </button><br><br><br>
                                         <button type="button" class="btn btn-warning" style="width: 100%; float: left;">Demander des documents complémentaires</button>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="comment">Envoyer un couriel : </label>
                                             <textarea class="form-control" rows="6" id="email" style="text-align: left;">
-Nous avons le plaisir de vous confirmer votre adhésion à l'ordre. 
+Nous avons le plaisir de vous confirmer votre formulaire de stage. 
 Veuillez trouver ci-joint les document à nous retourner.
 Cordialement.
                                             </textarea>
@@ -287,7 +279,7 @@ Cordialement.
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="comment">Commentaire : </label>
-                                            <textarea class="form-control" rows="6" id="comment">Candidat intéressant !</textarea>
+                                            <textarea class="form-control" rows="6" id="comment">Stage intéressant !</textarea>
                                             <button type="button" class="btn btn-primary" style="float: right;">Sauvegarder</button>
                                         </div>
                                     </div>
