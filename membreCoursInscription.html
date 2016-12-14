@@ -153,9 +153,63 @@
                 <br>
 
                 <div class="row">
-                    <div class="col-lg-9"></div>
+                    <div class="col-lg-9">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Informations</div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td><b>Fomation actuelle : </b></td>
+                                                <td>Bureau central</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Nom :</b></td>
+                                                <td>Pierre</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Prénom :</b></td>
+                                                <td>Jean</td>
+                                            </tr>    
+                                            <tr>
+                                                <td><b>Couriel :</b></td>
+                                                <td>jean.pierre@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Date de naissance : </b></td>
+                                                <td> 02 - 16 - 1992</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Adresse : </b></td>
+                                                <td> 11 rue du lac, Québec</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Ville :</b></td>
+                                                <td>Laval</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Statut :</b></td>
+                                                <td>Formation terminée</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-3">
-                        <input type="text" class="form-control" placeholder="Recherche de cours">
+                        <div class="input-group">
+                            <input type="hidden" name="search_param" value="all" id="search_param"> 
+                            <input type="text" class="form-control" value="Analyse" style="width: 80%;">
+                            <span>
+                                <a href="membreCoursRecherche.html"><button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button></a>
+                            </span>    
+                            <br><br>
+                            <span><b><h4>Résultat :</h4></b></span>
+                            <br>
+                            <a href="membreCoursRecherche.html"><button type="button" class="btn btn-warning" style=" width: 100%; float: right;">Cours : Analyse fonctionnelle</button></a>
+                        </div>
                     </div>
                 </div>
 

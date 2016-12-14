@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>OAFA - Membre</title>
+    <title>OAFA - Administration</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -46,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="membreIndex.html">OAFA - Membre</a>
+                <a class="navbar-brand" href="index.html">OAFA - Administration</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -65,7 +65,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Membre <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Employé <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -83,8 +83,8 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="active">
-                        <a href="membreIndex.html"><i class="fa fa-home" aria-hidden="true"></i> Accueil</a>
+                    <li>
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Accueil</a>
                     </li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-folder-o" aria-hidden="true"></i> Documentation <i class="fa fa-fw fa-caret-down"></i></a>
@@ -101,13 +101,21 @@
                         </ul>
                     </li>
                     <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#candidature"><i class="fa fa-file-text-o" aria-hidden="true"></i> Candidature <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="candidature" class="collapse">
+                            <li>
+                                <a href="adminCandidature.html">Traitement des candidatures</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
                         <a href="javascript:;" data-toggle="collapse" data-target="#stage"><i class="fa fa-building-o" aria-hidden="true"></i> Stage <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="stage" class="collapse">
                             <li>
-                                <a href="membreStageFormulaire.html">Remplir le formulaire</a>
+                                <a href="adminStageFormulaire.html">Traitement des formulaires</a>
                             </li>
                             <li>
-                                <a href="membreStageRapport.html">Déposer mon rapport</a>
+                                <a href="adminStageRapport.html">Traitement des rapports</a>
                             </li>
                         </ul>
                     </li>
@@ -115,15 +123,19 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#formation"><i class="fa fa-university" aria-hidden="true"></i> Formation <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="formation" class="collapse">
                             <li>
-                                <a href="membreCoursInscription.html">Inscription</a>
+                                <a href="adminFormationSuivi.html">Suivi des membres et candidats</a>
                             </li>
+                            
                         </ul>
                     </li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#cotisation"><i class="fa fa-money" aria-hidden="true"></i> Cotisation <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="cotisation" class="collapse">
                             <li>
-                                <a href="membreCotisation.html">Résumé</a>
+                                <a href="adminCotisationResume.html">Résumé</a>
+                            </li>
+                            <li>
+                                <a href="adminCotisationliste.html">Liste des membres</a>
                             </li>
                         </ul>
                     </li>
@@ -140,36 +152,57 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Accueil
+                            Résumé du cours
+                            <button type="button" class="btn btn-primary" style="float: right; width: 200px;">Cours suivant</button>
+                            <button type="button" class="btn btn-primary" style="float: right; width: 200px; margin-right: 30px;">Cours précédent</button>
                         </h1>
                     </div>
                 </div>
-      
-                <h4> Etat du stage : </h4>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                        <span class="sr-only">100% Complete (success)</span>
+                
+                <div class="row">
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Informations</div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td><b>Cours :</b></td>
+                                            <td>Analyse fonctionnelle</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Centre : </b></td>
+                                            <td>Bureau central</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Adresse:</b></td>
+                                            <td>2325 Rue de l'Université, Ville de Québec, QC G1V 0A6</td>
+                                        </tr>    
+                                        <tr>
+                                            <td><b>Couriel :</b></td>
+                                            <td>analyse-fonctionnelle@oafa.com</td>
+                                        </tr>
+                                            <tr>
+                                            <td><b>Commentaire :</b></td>
+                                            <td>Cours d'analyse fonctionnelle : dernière étape de la formation.
+                                            Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div><br>
+                            <span><b><h2>Demande de cours</h2></b></span>
+                            <label for="comment">Motivation : </label>
+                                            <textarea class="form-control" rows="6" id="email" style="text-align: left;">
+Afin d'approfondir mes connaissances je souhaiterais postuler pour ce cours-ci à la sessio prochaine
+Cordialement.
+                                            </textarea>
+                            <button type="button" class="btn btn-warning" style=" float: right;">Effectuer une demande</button>
+                            <button type="button" class="btn btn-default" style="float: right;">Ajouter une pièce jointe</button>
+                        </div>
                     </div>
                 </div>
-
-                <br>
-
-                <h4> Etat de la formation : </h4>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                        <span class="sr-only">100% Complete (success)</span>
-                    </div>
-                </div>
-
-                <br>
-
-                <h4> Etat de la cotisation : </h4>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                        <span class="sr-only">100% Complete (success)</span>
-                    </div>
-                </div>
-
             </div>
             <!-- /.container-fluid -->
 
